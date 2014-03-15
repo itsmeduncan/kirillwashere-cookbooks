@@ -13,3 +13,6 @@ recipe "imagemagick::rmagick", "Installs rmagick gem"
 %w{fedora centos rhel ubuntu debian}.each do |os|
   supports os
 end
+
+depends "apt"
+depends "build-essential"
